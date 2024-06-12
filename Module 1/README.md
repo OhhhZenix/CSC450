@@ -11,10 +11,10 @@
 
 ## Examples
 Image of fictional character program running. <br>
-![](./example-1.png) <br>
+![](./example-1.png) <p>
 Image of "CSC450_CT1_mod1-1" program running. <br>
-![](./example-2.png) <br>
+![](./example-2.png) <p>
 Image of "CSC450_CT1_mod1-2" program running. <br>
-![](./example-3.png) <br>
+![](./example-3.png) <p>
 
 ## Note
