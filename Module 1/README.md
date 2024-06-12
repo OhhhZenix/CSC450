@@ -10,11 +10,11 @@
 5. Enjoy the program(s)!
 
 ## Examples
-Image of fictional character program running.
+Image of fictional character program running. <br>
 ![](./example-1.png) <br>
-Image of "CSC450_CT1_mod1-1" program running.
+Image of "CSC450_CT1_mod1-1" program running. <br>
 ![](./example-2.png) <br>
-Image of "CSC450_CT1_mod1-2" program running.
+Image of "CSC450_CT1_mod1-2" program running. <br>
 ![](./example-3.png) <br>
 
 ## Note
