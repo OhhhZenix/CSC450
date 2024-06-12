@@ -1,4 +1,5 @@
 # Module 1
+This project contains three separate simple programs: one for creating a fictional character via user input, and the other two for simply displaying information.
 
 ## Usage
 1. Ensure you are in the correct directory of the sub-project.
@@ -18,3 +19,4 @@ Image of "CSC450_CT1_mod1-2" program running. <br>
 ![](./example-3.png) <p>
 
 ## Note
+The input types in the fictional character program are strings and will result in an error if left empty.
