@@ -6,7 +6,7 @@
 3. Run ```cd build``` to enter build directory.
 4. Depending on the generator use corresponding command to build the binaries of the project.
     - For Visual Studio Generators run ```MSBuild Module_1.sln``` 
-    - For Makefile Generator run ```make```
+    - For Makefile Generators run ```make```
 5. Enjoy the program(s)!
 
 ## Examples
