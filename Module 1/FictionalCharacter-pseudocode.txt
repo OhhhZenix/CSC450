@@ -1,0 +1,32 @@
+start
+    Declarations
+        string firstName
+        string lastName
+        string streetAddress
+        string city
+        string zipCode
+    
+    firstName = getHandledInput("Enter the first name of this fictional character.")
+    lastName = getHandledInput("Enter the last name of this fictional character.")
+    streetAddress = getHandledInput("Enter the street address of this fictional character.")
+    city = getHandledInput("Enter the city of this fictional character.")
+    zipCode = getHandledInput("Enter the zip code of this fictional character.")
+
+    output "The character's first name is " + firstName
+    output "The character's last name is " + lastName
+    output "The character's street address is " + streetAddress
+    output "The character's city is " + city
+    output "The character's zip code is " + zipCode
+end
+
+public string getHandledInput(string prompt)
+    Declarations
+        string userInput
+    
+    output prompt
+    input userInput
+
+    if userInput == "" then
+        return getHandledInput(prompt)
+    endIf
+return userInput
