@@ -18,11 +18,11 @@ std::string getHandledInput(std::string prompt)
 int main()
 {
     // Input
-    std::string firstName = getHandledInput("Enter the first name of this fictional charater.");
-    std::string lastName = getHandledInput("Enter the last name of this fictional charater.");
-    std::string streetAddress = getHandledInput("Enter the street address of this fictional charater.");
-    std::string city = getHandledInput("Enter the city of this fictional charater.");
-    std::string zipCode = getHandledInput("Enter the zip code of this fictional charater."); // zip codes are ordered numbers
+    std::string firstName = getHandledInput("Enter the first name of this fictional character.");
+    std::string lastName = getHandledInput("Enter the last name of this fictional character.");
+    std::string streetAddress = getHandledInput("Enter the street address of this fictional character.");
+    std::string city = getHandledInput("Enter the city of this fictional character.");
+    std::string zipCode = getHandledInput("Enter the zip code of this fictional character."); // zip codes are ordered numbers
 
     // Output
     std::cout << "The character's first name is " << firstName << std::endl;
