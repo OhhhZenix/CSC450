@@ -1,0 +1,4 @@
+start
+	output "Welcome to this C++ Program" 
+	output "I have corrected all errors for this program." 
+end

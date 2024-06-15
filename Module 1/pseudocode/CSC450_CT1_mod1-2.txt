@@ -1,0 +1,8 @@
+start
+	Declarations
+		num myMoney = 1000.50
+
+	output "Please be sure to correct all syntax errors in this program" 
+	output "I have corrected all errors for this program." 
+	output "The total amount of money available is = " + myMoney 
+end
