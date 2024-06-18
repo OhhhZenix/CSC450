@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.10)
-project("Module-2")
+project("Module_2")
 
-add_executable("Module-2" src/Module_2.cpp)
-
+add_executable("Module_2" src/Module_2.cpp)
