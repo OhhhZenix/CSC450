@@ -6,9 +6,9 @@ This project contains three separate simple programs: one for creating a fiction
 2. Run ```cmake -S . -B build``` to generate build files.
 3. Run ```cd build``` to enter build directory.
 4. Depending on the generator use corresponding command to build the binaries of the project.
-    - For Visual Studio Generators run ```MSBuild Module_1.sln``` 
-    - For Makefile Generators run ```make```
-5. Enjoy the program(s)!
+    - For Visual Studio Generator(s) run ```MSBuild Module_1.sln```
+    - For Makefile Generator(s) run ```make```
+5. Enjoy the program(s).
 
 ## Examples
 Image of fictional character program running. <br>
@@ -18,5 +18,5 @@ Image of "CSC450_CT1_mod1-1" program running. <br>
 Image of "CSC450_CT1_mod1-2" program running. <br>
 ![](./example-3.png) <p>
 
-## Note
+## Notes
 The input types in the fictional character program are strings and will result in an error if left empty.
