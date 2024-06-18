@@ -1,36 +1,3 @@
-/*
-start
-    Declarations
-        num INPUT_RETRIEVAL_COUNT = 3
-        string inputOne
-        string inputTwo
-        string result
-
-    output "Welcome to a simple input taking program!"
-    output "In this program you'll have to input 2 string 3 times."
-    output "At the end of each cycle you'll be presented with the sum of the two input."
-
-    for num i = 0 to INPUT_RETRIEVAL_COUNT step 1
-        inputOne = getHandledInput("First Input - Please input a string.")
-        inputTwo = getHandledInput("Second Input - Please input a string.")
-        result = inputOne + inputTwo
-        output "The concatenated string of " + inputOne + " and " + inputTwo + " is " + result
-    endFor
-end
-
-public string getHandledInput(string prompt)
-    Declarations
-        string userInput
-
-    output prompt
-    input userInput
-
-    if userInput == "" then
-        return getHandledInput(prompt)
-    endIf
-return userInput
-*/
-
 #include <iostream>
 #include <string>
 
