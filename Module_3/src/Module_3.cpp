@@ -14,6 +14,7 @@ int getIntegerInput(std::string prompt) {
 }
 
 int main() {
+  // get input
   int numOne = getIntegerInput("Enter a number.");
   int numTwo = getIntegerInput("Enter a second number.");
   int numThree = getIntegerInput("Enter a third number.");
@@ -23,6 +24,7 @@ int main() {
   int *ptrTwo = new int(numTwo);
   int *ptrThree = new int(numThree);
 
+  // display info
   std::cout << "Number One - Mem: " << ptrOne << " Value: " << *ptrOne
             << std::endl;
   std::cout << "Number Two - Mem: " << ptrTwo << " Value: " << *ptrTwo
