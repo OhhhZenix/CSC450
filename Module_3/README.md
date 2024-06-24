@@ -1,5 +1,5 @@
 # Module 3
-A simple C++ program.
+A simple C++ program that takes three numbers as input, then displays their memory addresses and values back to the user.
 
 ## Usage
 1. Ensure you are in the correct directory of the sub-project.
