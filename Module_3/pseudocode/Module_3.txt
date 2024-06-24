@@ -1,0 +1,38 @@
+start
+	Declarations
+		num numOne
+		num numTwo
+		num numThree
+		num* ptrOne
+		num* ptrTwo
+		num* ptrThree
+	
+	numOne = getIntegerInput("Enter a number.")
+	numTwo = getIntegerInput("Enter a second number.")
+	numThree = getIntegerInput("Enter a third number.")
+
+	ptrOne = new int(numOne)
+	ptrTwo = new int(numTwo)
+	ptrThree = new int(numThree)
+
+	output "Number One - Mem: " + ptrOne + " Value: " + *ptrOne
+	output "Number Two - Mem: " + ptrTwo + " Value: " + *ptrTwo
+	output "Number Three - Mem: " + ptrThree + " Value: " + *ptrThree
+
+	delete ptrOne
+	delete ptrTwo
+	delete ptrThree
+end
+
+public num getIntegerInput(string prompt)
+	Declarations
+		string userInput
+	
+	try
+		output prompt
+		input userInput
+		return cast userInput to num
+	catch
+		output "Invalid input. Try again!"
+	endTry
+return getIntegerInput(prompt) 
