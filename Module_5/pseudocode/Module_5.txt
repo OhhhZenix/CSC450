@@ -1,0 +1,55 @@
+start
+    Declarations
+        string originalFilePath = "CSC450_CT5_mod5.txt"
+        string reversedFilePath = "CSC450-mod5-reverse.txt"
+        string userInput
+
+    output "Enter any new data you'd like to add to " + originalFilePath
+    input userInput
+
+    appendToFile(originalFilePath, userInput)
+    createReversedFile(originalFilePath, reversedFilePath)
+end
+
+public void appendToFile(string filePath, string data)
+    Declarations
+        file file = open file from filePath
+    
+    if file is not open then
+        output "Could not open the file " + filePath
+        return
+    endIf
+
+    write data to file
+    file close
+
+    output "Added data to " + filePath
+return
+
+public void createReversedFile(string originalFilePath, string newFilePath)
+    Declarations
+        file originalFile = open file from originalFilePath
+        file newFile = open file from newFilePath
+        string fileContent
+    
+    if originalFile is not open then
+        output "Could not open the file " + originalFilePath
+        return
+    endIf
+
+    if newFile is not open then
+        output "Could not create the file " + newFilePath
+        return
+    endIf
+
+    while file has next line
+        input fileContent
+        reverse fileContent
+        write fileContent to newFile
+    endWhile
+
+    originalFile close
+    newFile close
+
+    output "Reversed " + originalFilePath + " to " + newFilePath
+return
