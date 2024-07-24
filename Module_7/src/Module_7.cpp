@@ -5,7 +5,7 @@
 // sync resource
 std::mutex mutex;
 
-void count_up() {
+void countUp() {
   for (int i = 0; i <= 20; i++) {
     // ensures proper access
     std::lock_guard<std::mutex> lock(mutex);
@@ -14,7 +14,7 @@ void count_up() {
   }
 }
 
-void count_down() {
+void countDown() {
   for (int i = 20; i >= 0; i--) {
     // ensures proper access
     std::lock_guard<std::mutex> lock(mutex);
@@ -25,11 +25,11 @@ void count_down() {
 
 int main() {
   // create and spawn threads
-  std::thread thread_one(count_up);
-  std::thread thread_two(count_down);
+  std::thread threadOne(countUp);
+  std::thread threadTwo(countDown);
   // clean up threads
-  thread_one.join();
-  thread_two.join();
+  threadOne.join();
+  threadTwo.join();
   // exit program
   return 0;
 }
