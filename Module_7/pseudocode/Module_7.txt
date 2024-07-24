@@ -1,0 +1,26 @@
+start
+	Declarations
+		thread threadOne
+		thread threadTwo
+		mutex myMutex
+
+	threadOne(countUp(myMutex))
+	threadTwo(countDown(myMutex))
+
+	threadOne.join()
+	threadTwo.join()
+end
+
+public void countUp(mutex myMutex)
+	for num i = 0 to 20 step 1
+		lock myMutex
+		output "Thread 1: " + i
+	endFor
+return
+
+public void countDown(mutex myMutex)
+	for num i = 20 to 0 step 1
+		lock myMutex
+		output "Thread 2: " + i
+	endFor
+return
