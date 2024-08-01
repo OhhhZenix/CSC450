@@ -1,0 +1,29 @@
+start
+	Declarations
+		thread threadOne
+		thread threadTwo
+
+	threadOne = thread(countUp)
+	threadTwo = thread(countDown)
+
+	start threadOne
+	start threadTwo
+
+	join threadOne
+	join threadTwo
+end
+
+
+public void countUp()
+	for num i = 0 to 20 step 1
+		sync/lock output
+		output "Counter Up: " + i
+	endFor
+return
+
+public void countDown()
+	for num i = 20 to 0 step 1
+		sync/lock output
+		output "Counter Down: " + i
+	endFor
+return
